@@ -13,7 +13,24 @@
             Where are you form */
             # this is a commnet
             echo "<h1>Hi and welcome back.</h1>";
-            echo "Welcome to Full Stack - Batch 1";
+            echo "<p>Welcome to Full Stack - Batch 1</p>";
+
+            $a = 6;
+            $b = 5;
+            echo $a + $b;
+            echo "<br/>";
+            function myFunc() {
+                // $a = 3;
+                global $a;
+                echo $a;
+            }
+            echo "<br/>";
+            myFunc();
+            echo "<br/>";
+            echo $a;
+            echo"<br/>";
+            $name = "Ali";
+            echo "Welcome to the class ".$name;
         ?>
     </body>
 </html>
