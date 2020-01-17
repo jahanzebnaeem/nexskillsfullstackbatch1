@@ -8,6 +8,7 @@
     </head>
     <body>
         <?php
+            include 'includes/header.php';
             // $arr = array(1,2,3,4);
             // $mark = array("Ali"=>"65", "Ahmad"=>"75", "Bilal"=>"85");
             $marks = array(array("Ali",65,80),array("Ahmad",75,70),array("Bilal",85,90));
@@ -40,6 +41,7 @@
             // guessMyName("Waleed", "Akbar");
             // guessMyName("Mehmood", "Atta");
             // guessMyName("Muneeb Oneeb Rehman", "Gulzar Ahmad")
+            include 'includes/footer.php';
         ?>
     </body>
 </html>
