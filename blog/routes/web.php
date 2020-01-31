@@ -12,11 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Welcome');
 });
 
 Route::get('/myP', function () {
-    return "Hello world";
+    return "Full Stack Batch 1";
 });
 
 Route::get('/myPa', function () {
@@ -44,3 +44,20 @@ Route::get('/myNPage', function () {
 });
 
 Route::get('/myNewPage', 'HelloController@index');
+
+Route::get('/hello', 'HelloController@hello');
+
+Route::get('/main', 'TestController@index');
+
+// Route::get('/about', 'HelloController@about');
+Route::get('/services', 'HelloController@services');
+
+Route::view('/about', 'about');
+// Route::view('/services', 'services');
+
+Route::get('/contact', function() {
+    $val = "Hi! How are you?";
+    return view('contact', [
+        'greetings' => $val
+    ]);
+});
