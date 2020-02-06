@@ -6,15 +6,6 @@ use Illuminate\Http\Request;
 
 class HelloController extends Controller
 {
-    public function index() {
-        $coolString = 'Hello from controller';
-        return view('subviews.myNewPage', compact('coolString'));
-    }
-
-    public function hello() {
-        return view('app');
-    }
-
     public function about() {
         return view('about');
     }
@@ -35,6 +26,6 @@ class HelloController extends Controller
 
         // dd($nServices);
 
-        return view('services', compact('nServices'));
+        return view('services', compact('services'));
     }
 }

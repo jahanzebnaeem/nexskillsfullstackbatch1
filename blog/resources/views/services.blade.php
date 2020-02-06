@@ -9,8 +9,8 @@
         {{-- @foreach ($services as $service)
          <li>{{$service}}</li>
         @endforeach --}}
-        @forelse ($nServices as $service)
-            {{-- {{dd($service->name)}} --}}
+         @forelse ($nServices as $service)
+           {{-- {{dd($service->name)}} --}}
             <li>{{ $service->name }}</li>
         @empty
             <li>No services available</li>

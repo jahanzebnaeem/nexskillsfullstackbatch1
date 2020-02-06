@@ -1,14 +1,14 @@
-<ul class="nav">
-    <li class="nav-item">
-      <a class="nav-link" href="/about">Link</a>
+<ul>
+    <li>
+      <a href="/about">about</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/services">Link</a>
+    <li>
+      <a href="/services">services</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
+    <li>
+      <a href="#">Link</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
+    <li>
+      <a href="#">Disabled</a>
     </li>
   </ul>
