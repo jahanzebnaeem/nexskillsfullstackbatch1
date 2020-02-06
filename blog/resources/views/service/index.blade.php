@@ -9,7 +9,12 @@
         {{-- @foreach ($services as $service)
          <li>{{$service}}</li>
         @endforeach --}}
-         @forelse ($nServices as $service)
+        <form action="/service" method="POST">
+            <input type="text" name="name" id="name" autocomplete="off">
+            @csrf
+            <button type="submit">Add Service</button>
+        </form>
+        @forelse ($nServices as $service)
            {{-- {{dd($service->name)}} --}}
             <li>{{ $service->name }}</li>
         @empty

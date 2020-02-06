@@ -3,7 +3,7 @@
       <a href="/about">about</a>
     </li>
     <li>
-      <a href="/services">services</a>
+      <a href="/service">service</a>
     </li>
     <li>
       <a href="#">Link</a>
