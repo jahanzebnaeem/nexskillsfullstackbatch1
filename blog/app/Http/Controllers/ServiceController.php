@@ -40,4 +40,13 @@ class ServiceController extends Controller
         return redirect()->back();
         // dd(request('name'));
     }
+
+    public function services()
+    {
+        $services = [
+            'Service a',
+            'Service b'
+        ];
+        return view('services', compact('services'));
+    }
 }
