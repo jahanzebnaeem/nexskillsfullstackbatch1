@@ -28,3 +28,4 @@ Route::view('/about', 'about');
 
 Route::get('/quiz', 'QuizController@index');
 Route::get('/services', 'ServiceController@services');
+Route::post('/services', 'ServiceController@addservices');
