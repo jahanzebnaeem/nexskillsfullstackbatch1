@@ -5,7 +5,7 @@
         {{-- <li>Service 1</li>
         <li>Service 2</li> --}}
         @foreach ($services as $service)
-        <li>{{$service}}</li>
+            <li>{{$service}}</li>
         @endforeach
     </ul>
 @endsection

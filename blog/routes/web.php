@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('Welcome');
+    return view('welcome');
 });
 
 Route::get('/newPage', 'HelloController@index');
