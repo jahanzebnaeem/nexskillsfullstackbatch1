@@ -16,7 +16,7 @@
         {{-- @foreach ($services as $service)
          <li>{{$service}}</li>
         @endforeach --}}
-        @forelse ($nServices as $service)
+        @forelse ($services as $service)
            {{-- {{dd($service->name)}} --}}
             <li>{{ $service->name }}</li>
         @empty

@@ -20,11 +20,11 @@ class ServiceController extends Controller
             'Service 2'
         ];
 
-        $nServices = \App\Service::all();
+        $services = \App\Service::all();
 
         // dd($nServices);
 
-        return view('service.index', compact('nServices'));
+        return view('service.index', compact('services'));
     }
 
     public function store()
@@ -35,36 +35,6 @@ class ServiceController extends Controller
 
         \App\Service::create($data);
 
-        // $service = new \App\Service();
-
-        // $service->name = request('name');
-        // $service->save();
-
-        return redirect()->back();
-        // dd(request('name'));
-    }
-
-    public function services()
-    {
-        // $services = [
-        //     'Service a',
-        //     'Service b'
-        // ];
-
-        $services = \App\Service::all();
-
-        // dd($services);
-
-        return view('services', compact('services'));
-    }
-
-    public function addservices()
-    {
-        $data = request()->validate([
-            'name' => 'required|min:5'
-        ]);
-
-        \App\Service::create($data);
         // $service = new \App\Service();
 
         // $service->name = request('name');
