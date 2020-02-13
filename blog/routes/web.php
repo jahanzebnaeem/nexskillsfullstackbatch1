@@ -36,4 +36,4 @@ Route::post('/services', 'ServiceController@addservices');
 Route::get('/customers', 'CustomerController@index');
 Route::get('/customers/create', 'CustomerController@create');
 Route::post('/customers', 'CustomerController@store');
-Route::get('/customers/{customerId}', 'CustomerController@show');
+Route::get('/customers/{customer}', 'CustomerController@show');
