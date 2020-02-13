@@ -1,6 +1,6 @@
 <div>
     <label for="name">Name</label>
-<input type="text" name="name" id="name" autocomplete="off" value="{{ old('name') ?? $customer->name }}">
+    <input type="text" name="name" id="name" autocomplete="off" value="{{ old('name') ?? $customer->name }}">
     @error('name') <p style="color:red;">{{ $message }}</p> @enderror
 </div>
 <div>

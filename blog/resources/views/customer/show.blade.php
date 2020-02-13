@@ -7,7 +7,7 @@
 <strong>Name</strong>
 <p>{{ $customer->name }}</p>
 
-<strong>Emai</strong>
+<strong>Email</strong>
 <p>{{ $customer->email }}</p>
 
 <div>
