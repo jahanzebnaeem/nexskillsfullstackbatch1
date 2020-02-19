@@ -11,6 +11,7 @@
 |
 */
 
+use App\Http\Controllers\CountryController;
 use App\Http\Controllers\CustomerController;
 
 Route::get('/', function () {
@@ -40,3 +41,7 @@ Route::get('/customers/{customer}', 'CustomerController@show');
 Route::get('/customers/{customer}/edit', 'CustomerController@edit');
 Route::patch('/customers/{customer}', 'CustomerController@update');
 Route::delete('/customers/{customer}', 'CustomerController@destroy');
+
+Route::get('/countries', 'CountryController@index');
+Route::get('/countries/create', 'CountryController@create');
+Route::post('/countries', 'CountryController@store');
