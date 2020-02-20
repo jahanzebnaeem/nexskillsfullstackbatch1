@@ -14,9 +14,7 @@
 use App\Http\Controllers\CountryController;
 use App\Http\Controllers\CustomerController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
 
 Route::get('/newPage', 'HelloController@index');
 
@@ -45,3 +43,7 @@ Route::delete('/customers/{customer}', 'CustomerController@destroy');
 Route::get('/countries', 'CountryController@index');
 Route::get('/countries/create', 'CountryController@create');
 Route::post('/countries', 'CountryController@store');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
